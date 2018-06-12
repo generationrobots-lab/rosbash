@@ -70,7 +70,7 @@ alias install='rosshell source install/setup.bash'
 alias install_deps="(roscd;cd ..;rosdep install --from-paths src --ignore-src --rosdistro $ROS_DISTRO -y)"
 
 alias rosrefresh='(roscd;cd ..; rospack profile)'
-alias cm='(roscd;cd ..; catkin_make -DCMAKE_BUILD_TYPE=Release -j8)'
+alias cm='(roscd;cd ..; catkin_make -DCMAKE_BUILD_TYPE=Release)'
 alias catkin_eclipse='(roscd;cd ..; catkin_make --force-cmake -G"Eclipse CDT4 - Unix Makefiles")'
 alias pydev='python $(rospack find mk)/make_pydev_project.py'
 
